@@ -70,7 +70,44 @@
         <snapshotRepository>
            <id>nexus</id>
            <name>maven-releases-1</name>
-	   <url>http://65.2.82.58:8081/repository/maven-releases-1/</url>
+	   <url>ubuntu@ip-172-31-5-1:~$ sudo find /var/lib/jenkins -name settings.xml -type f 2>/dev/null
+/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven/conf/settings.xml
+/var/lib/jenkins/workspace/Project-2/.m2/settings.xml
+/var/lib/jenkins/workspace/maven-app/.m2/settings.xml
+ubuntu@ip-172-31-5-1:~$ sudo cat /var/lib/jenkins/workspace/maven-app/.m2/settings.xml
+<settings>
+  <servers>
+    <server>
+      <id>nexus</id>
+      <username>admin</username>
+      <password>Admin@123</password>
+    </server>
+  </servers>
+</settings>
+ubuntu@ip-172-31-5-1:~$ sudo grep -A15 -B2 "distributionManagement" /var/lib/jenkins/workspace/maven-app/pom.xml
+    </build>
+
+  <distributionManagement>
+
+       <repository>
+         <id>nexus</id>
+         <name>maven-releases-1</name>
+         <url>http://65.2.82.58:8081/repository/maven-releases-1/</url>
+       </repository>
+
+        <snapshotRepository>
+           <id>nexus</id>
+           <name>maven-releases-1</name>
+           <url>http://65.2.82.58:8081/repository/maven-snapshot-1/</url>
+        </snapshotRepository>
+
+    </distributionManagement>
+
+</project>
+
+
+
+</url>
         </snapshotRepository>
 
     </distributionManagement>
