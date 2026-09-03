@@ -69,7 +69,7 @@
      
         <snapshotRepository>
            <id>nexus</id>
-           <name>maven-snapshots-1</name>
+           <name>maven-releases-1</name>
 	   <url>http://65.2.82.58:8081/repository/maven-releases-1/</url>
         </snapshotRepository>
 
