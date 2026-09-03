@@ -15,7 +15,7 @@
 
     <groupId>com.example</groupId>
     <artifactId>demo</artifactId>
-    <version>2.1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
 
     <!-- Important: WAR packaging -->
     <packaging>war</packaging>
@@ -64,13 +64,13 @@
        <repository>
          <id>nexus</id>
          <name>maven-releases-1</name>
-         <url>http://localhost:8081/repository/maven-releases-1/</url>
+         <url>http://65.2.82.58:8081/repository/maven-releases-1/</url>
        </repository>
      
         <snapshotRepository>
            <id>nexus</id>
            <name>maven-snapshots-1</name>
-	   <url>http://localhost:8081/repository/maven-snapshots-1</url>
+	   <url>http://65.2.82.58:8081/repository/maven-releases-1/</url>
         </snapshotRepository>
 
     </distributionManagement>
